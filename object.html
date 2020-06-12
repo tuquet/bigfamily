@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tungxuan"></div>
+    <p>a</p>
+    <p>b</p>
+    <p>c</p>
+    <p>d</p>
+    <script>
+        console.log(
+            document
+        )
+        document.getElementsByTagName('p')[3].innerText = 'Hallo'
+        var truong = 'phunghung'
+        var tungxuan = {
+            deptrai: true,
+            school: truong,
+            hocgioi: false
+        }
+        //Day la 1 Object
+        // Su dung 1 Object bang cac truong.key << key la deptrai , school, hocgioi
+        console.log(tungxuan)
+        document.getElementById('tungxuan').innerHTML = tungxuan.deptrai
+    </script>
+</body>
+</html>
