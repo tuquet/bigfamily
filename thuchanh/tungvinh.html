@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>sau khi bam</p>
+    <button onclick="myFunciton()">click</button>
+    <br>
+    <button onclick="myWrite()">where R you</button>
+    <br>
+    <button onclick="tieude()">thay đổi title website</button>
+    <br>
+    <p id="bai3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nesciunt laboriosam quidem perspiciatis pariatur nisi dolorum esse porro quae, iusto incidunt consectetur, eos atque, officiis odit facere possimus omnis. Dolores.</p>
+    <button onclick="changecolor()">thay đổi text sang màu đỏ</button>
+</body>
+    <script>
+        function myFunciton() {
+            alert("warning, pleas stop here ");
+        }
+        function myWrite() {
+            document.write("I'm here");
+        }
+        function tieude() {
+            document.title ="Xin chao javascipt"
+        }
+        function changecolor() {
+            document.getElementById("bai3").style.color ="red"
+        }
+    </script>
+</html>
