@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Chủ</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .hide-element{
+            display: none;
+        }
+        .red-color{
+            color:red;
+        }
+        .red-border{
+            border-color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,13 +33,85 @@
     thi man hinh se hien thi noi dung cua ham alert ta da viet 
     </p>
     </p>
-    <input type="text">
+
+    <input type="text" id="txtValue">
     <button onClick="somethingtodo()">OK</button>
+
+    <p>Cau hoi 3: Tạo 1 đoạn lorem text 
+        Tạo 1 field để nhập mã màu
+        Ấn submit đổi màu đoạn lorem text</p>
+    </p>
+    <p>
+        Tra loi:
+        <p id="lorenText">Hello World</p>
+    </p>
+
+    <div>
+        <div>
+        <input type="color" id="head" name="head"
+                   value="#e66465">
+
+        <label for="head">Head</label>
+        </div>
+    <div>
+        <input type="text" id="txtfontSize" placeholder="Nhập font size">
+        <p id="txtfontSizeRequired" class="hide-element">Trường này không được để trống</p>
+    </div>
+    <div>
+        <input type="text" id="txtTextAlign" placeholder="Nhập text algin">
+        <p id="txtTextAlignRequired" class="hide-element">Trường này không được để trống</p>
+    </div>
+
+    <button onClick="changeColorWhenPick()">Submit</button>
+
+
+
+    <script>
+        function changeColorWhenPick() {
+            // document.getElementById("lorenText").style.color = colorCode;
+            let colorCode = document.getElementById("head").value;
+            let textSize = document.getElementById("txtfontSize").value+"px";
+            let textAlgin = document.getElementById("txtTextAlign").value;
+
+            //validate
+            if(document.getElementById("txtfontSize").value==""){
+                document.getElementById("txtfontSizeRequired").classList.remove("hide-element");
+                document.getElementById("txtfontSizeRequired").classList.add("red-color");
+                // document.getElementById("txtfontSizeRequired").setAttribute("class", "red-color");
+                document.getElementById("txtfontSize").classList.add("red-border");
+            }
+            else{
+                document.getElementById("txtfontSizeRequired").classList.add("hide-element");
+                // document.getElementById("txtfontSizeRequired").removeAttribute("class", "red-color");
+                document.getElementById("txtfontSize").classList.remove("red-border");
+            }
+
+            if(document.getElementById("txtTextAlign").value==""){
+                document.getElementById("txtTextAlignRequired").removeAttribute("class", "hide-element");
+                document.getElementById("txtTextAlignRequired").setAttribute("class", "red-color");
+                document.getElementById("txtTextAlign").setAttribute("class", "red-border");
+            }
+            else{
+                document.getElementById("txtTextAlignRequired").classList.add("hide-element");
+                // document.getElementById("txtTextAlignRequired").removeAttribute("class", "red-color");
+                document.getElementById("txtTextAlign").classList.remove("red-border");
+            }
+
+            if(document.getElementById("txtfontSize").value!=""&&document.getElementById("txtTextAlign").value!=""){
+                document.getElementById("lorenText").style.color = colorCode;
+                document.getElementById("lorenText").style.fontSize = textSize;
+                document.getElementById("lorenText").style.textAlign  = textAlgin;
+            }
+
+
+            
+        }
+    </script>
+  
     <script>
         function somethingtodo() {
-            alert("hellotung")
+            alert(""+document.getElementById("txtValue").value);
         }
-        function 
     </script>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
