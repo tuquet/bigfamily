@@ -43,7 +43,12 @@
     </p>
     <p>
         Tra loi:
-        <p id="lorenText">Hello World</p>
+        <div>
+            Input  :<input type="text" id="inputText" placeholder="Nhập dữ liệu muốn hiển thị"> 
+        </div>
+        <div>
+            Output :<p id="lorenText">Hello World</p>
+        </div>
     </p>
 
     <div>
@@ -96,8 +101,9 @@
                 // document.getElementById("txtTextAlignRequired").removeAttribute("class", "red-color");
                 document.getElementById("txtTextAlign").classList.remove("red-border");
             }
-
+            
             if(document.getElementById("txtfontSize").value!=""&&document.getElementById("txtTextAlign").value!=""){
+                document.getElementById("lorenText").innerHTML = document.getElementById("inputText").value;
                 document.getElementById("lorenText").style.color = colorCode;
                 document.getElementById("lorenText").style.fontSize = textSize;
                 document.getElementById("lorenText").style.textAlign  = textAlgin;

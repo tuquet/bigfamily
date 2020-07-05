@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      .hide-element {
+        display: none;
+      }
+      .red-color {
+        color: red;
+      }
+      .red-border {
+        border-color: red;
+      }
+      .height-100 {
+        height: 100px;
+      }
+      .width-400 {
+        width: 400px;
+      }
+      .format-result {
+        font-size: 69px;
+        color: #fdfdfd;
+      }
+      .one-circle {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .special-circle {
+        height: 80px;
+        border-radius: 100px;
+        cursor: pointer;
+      }
+
+      .gray-background {
+        background-color: #9696b0;
+      }
+      .yellow-background {
+        background-color: #f09a37;
+      }
+
+      .black-background {
+        background-color: #333333;
+      }
+      .back-ground-black {
+        background-color: #000000;
+      }
+      .number-content {
+        font-size: 30px;
+        color: #fdfdfd;
+        height: 100%;
+      }
+      .pointer {
+        cursor: pointer;
+      }
+      #result {
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container width-400 back-ground-black">
+      <row class="row1 row height-100">1</row>
+
+      <row class="row2 row height-100">
+        <!-- <div class="col-9"></div> -->
+        <div class="col-12">
+          <p
+            class="format-result d-flex align-items-end justify-content-end"
+            id="result"
+          >
+            24
+          </p>
+        </div>
+      </row>
+      <!-- row 3  -->
+      <row class="row3 row height-100">
+        <div class="col-3">
+          <div class="one-circle gray-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              C
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="one-circle gray-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              +/_
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="one-circle gray-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              %
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="one-circle yellow-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              :
+            </div>
+          </div>
+        </div>
+      </row>
+      <!-- row 4  -->
+      <row class="row4 row height-100">
+        <div class="col-3">
+          <div class="one-circle black-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              7
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="one-circle black-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              8
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="one-circle black-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              9
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="one-circle yellow-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              x
+            </div>
+          </div>
+        </div>
+      </row>
+
+      <!-- row 5  -->
+      <row class="row5 row height-100">
+        <div class="col-3">
+          <div class="one-circle black-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              4
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="one-circle black-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              5
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="one-circle black-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              6
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="one-circle yellow-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              -
+            </div>
+          </div>
+        </div>
+      </row>
+
+      <!-- row 6  -->
+      <row class="row6 row height-100">
+        <div class="col-3">
+          <div class="one-circle black-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              1
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="one-circle black-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              2
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="one-circle black-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              3
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="one-circle yellow-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              +
+            </div>
+          </div>
+        </div>
+      </row>
+
+      <!-- row 7  -->
+      <row class="row7 row height-100 align-items-center">
+        <div class="col-6">
+          <div class="special-circle black-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              0
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="one-circle black-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              .
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="one-circle yellow-background">
+            <div
+              class="number-content d-flex justify-content-center align-items-center"
+            >
+              =
+            </div>
+          </div>
+        </div>
+      </row>
+    </div>
+
+    <script>
+      function somethingtodo() {
+        alert("" + document.getElementById("txtValue").value);
+      }
+    </script>
+
+    <script>
+      var calculator = "";
+
+      var elements = document.getElementsByClassName("one-circle");
+
+      var inputNumber = function (val) {
+        calculator += val.currentTarget.innerText;
+        // alert(val.currentTarget.innerText);
+        document.getElementById("result").innerText = calculator;
+      };
+
+      for (var i = 0; i < elements.length; i++) {
+        let val = elements[i].children[0].innerText;
+
+        // elements[i].addEventListener("click", inputNumber(val), false);
+        elements[i].addEventListener("click", inputNumber.bind(val), false);
+      }
+    </script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- End Script -->
+  </body>
+</html>
