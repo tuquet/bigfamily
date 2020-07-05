@@ -9,7 +9,54 @@
 </head>
 
 <body>
-    
+    <h1>xin chao</h1>
+    <hr>
+    <div>
+        <label>noi dung</label>
+        <input type="text" id="haha">
+    </div>
+    <button onclick="showThongBao()">
+        submit
+    </button>
+    <hr>
+    <p id="noidung">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sequi a culpa provident ipsum quidem at molestias omnis ipsa doloribus, aliquid, eius velit soluta sapiente nesciunt similique? Error, qui esse.</p>
+    <div>
+        <label>font size</label>
+        <input type="text" id="getFontSize">
+    </div>
+    <div>
+        <label>font color</label>
+        <input type="text" id="getFontColor">
+    </div>
+    <div>
+        <label>font weight</label>
+        <input type="text" id="getFontWeight">
+    </div>
+    <button onclick="thayDoi()">Submit</button>
+    <button onclick="reset()">Reset</button>
+    <script>
+        function showThongBao(){
+            alert(document.getElementById('haha').value)
+        }
+        function thayDoi(){
+           document.getElementById('noidung').style.color = document.getElementById('getFontColor').value
+           document.getElementById('noidung').style.fontSize = document.getElementById('getFontSize').value
+           document.getElementById('noidung').style.fontWeight = document.getElementById('getFontWeight').value
+        }
+        function reset(){
+            document.getElementById('getFontColor').value = ''
+            document.getElementById('getFontSize').value = ''
+            document.getElementById('getFontWeight').value = ''
+        }
+    </script>
+    <!-- 
+        Cach lam bai 2:
+        dat ten id cho 1 doan can thay doi, Chung ta can phai thay doi color,fontsize,fontweith
+        document.getElementById('noidung').style.color = ....
+        document.getElementById('noidung').style.fontSize = ....
+        document.getElementById('noidung').style.fontWeight = ....
+        ... o day la value cua cac input
+        lay value cua 1 the = cau lenh sau : document.getElementById('something').value
     <!-- Embbed Script -->
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
