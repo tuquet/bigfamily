@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang Chủ</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center;">Bài học JS cơ bản</h1>
+
+    <p>toi khong biet can chu ra giua</p>
+    <p>bai 1: show thong bao voi noi dung cua input len man hinh khi an ok</p>
+    <p>cau hoi 1: lam sao de bat duoc su kien click cua nguoi dung</p>
+    <p>
+      tra loi: cac the html deu co thuoc tinh de bat su kien nguoi dung, trong
+      truong hop nay chung ta dung on click <br />
+      vi du: onClick="somethingtodo()"<br />
+      somethingtodo la hanh dong cua JS do chung ta viet trong the Script<br>
+      day la cach khai bao somethingtodo: funtion somethingtodo() {}
+
+    </p>
+
+    <div>
+      <input type="text" />
+      <button onClick="somethingtodo()">Ok</button>
+    </div>
     <!-- Embbed Script -->
+    <script>
+        function somethingtodo() {
+            alert('hello long')
+        }
+
+    </script>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- End Script -->
-</body>
+  </body>
 </html>
