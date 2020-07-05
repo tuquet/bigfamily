@@ -19,12 +19,37 @@
     <p>Cau hoi2: lam sao de lay duoc gia tri cua o input de show len hop thong bao</p>
     <p>Tra loi:Chung ta phai lay duoc gia tri value cua input de lay duoc gia tri value cua input chung ta su dung document.getElementById
     </p>
+    <p>Cau hoi3:</p>
     <input type="text" id="myText" value="welcome">
     <button onClick="somethingtodo()">OK</button>
+    <br>
+    <hr>
+    <p id="noidung">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas quasi distinctio expedita iste vel, consectetur, blanditiis laudantium animi quis veritatis numquam non delectus quaerat aspernatur. Molestiae eligendi provident qui aperiam?</p>
+    <div>
+        <label style="font-size: 25;" >Font Size</label>
+        <input id="getfontsize" type="text">
+    </div> <div>
+        <label>Color</label>
+        <input id="getcolor" type="color">
+    </div> <div>
+        <label>Text align</label>
+        <input id="gettextalign" type="text">
+    </div>
+    <button onclick="submit()">summit</button>
+
     <script>
         function somethingtodo() {
             var thongbao = document.getElementById("myText").value
             alert(thongbao)
+        }
+        function submit() {
+            var getFontSize = document.getElementById("getfontsize").value
+            var getColor = document.getElementById("getcolor").value
+            var getTextAlign = document.getElementById("gettextalign").value
+            var noidung = document.getElementById("noidung")
+            noidung.style.fontSize = getFontSize
+            noidung.style.color = getColor
+            noidung.style.textAlign = getTextAlign 
         }
     </script>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
