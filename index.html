@@ -16,23 +16,24 @@
       tra loi: cac the html deu co thuoc tinh de bat su kien nguoi dung, trong
       truong hop nay chung ta dung on click <br />
       vi du: onClick="somethingtodo()"<br />
-      somethingtodo la hanh dong cua JS do chung ta viet trong the Script<br>
-      day la cach khai bao somethingtodo: funtion somethingtodo() {}<br>
-      cau hoi 2: lam sao de lay duoc gia tri cua o input de show len 1 thong bao<br>
-      tra loi: - thay doi thuoc tinh cua alert thanh 1 thuoc tinh khac 
+      somethingtodo la hanh dong cua JS do chung ta viet trong the Script<br />
+      day la cach khai bao somethingtodo: funtion somethingtodo() {}<br />
+      cau hoi 2: lam sao de lay duoc gia tri cua o input de show len 1 thong
+      bao<br />
+      tra loi:chung ta phai lay dc gia tri value cua input. De lay dc gia tri
+      val cua input chung ta su dung document.getElementById
     </p>
 
     <div>
-      <input type="text" />
+      <input type="text" id="somethingtodo">
       <button onClick="somethingtodo()">Ok</button>
     </div>
     <!-- Embbed Script -->
     <script>
-        function somethingtodo() {
-            alert('')
-
-        }
-
+          function somethingtodo() {
+     var somethingtodo = document.getElementById("somethingtodo").value
+              alert(somethingtodo)
+          }
     </script>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
